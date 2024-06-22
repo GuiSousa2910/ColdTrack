@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.header {
+    width: 100%;
+    background-color: #364DAA;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 3px solid #040189;
+    font-size: 20px;
+
+}
+
+#estabelecimento_slc {
+    margin-bottom: 30px;
+    margin-top: -10px;
+    height: 3rem;
+    width: 14rem;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #00FFFF;
+    color: white;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#select_tipo {
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: -10px;
+    height: 3rem;
+    width: 14rem;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid #00FFFF;
+    color: white;
+    outline: none;
+    font-size: 20px;
+}
+
+#estabelecimento_slc option {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#select_tipo option {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.imagem1 {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.imagemfixa {
+    height: 230px;
+    width: 230px;
+}
+
+.opcPrincipais {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-right: 0px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.header a:link {
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+    color: #5F9EA0;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    background: rgb(51, 159, 217);
+    background: linear-gradient(267deg, rgba(51, 159, 217, 1) 0%, rgba(4, 1, 137, 1) 50%, rgba(2, 1, 59, 1) 84%);
+}
+
+
+.opcoes {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.cadastro2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+}
+
+.opcoes .textoBotao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%
+}
+
+.opcoes .textoBotao .texto .pergunta {
+    color: rgb(115, 202, 231);
+    font-weight: bolder;
+    margin-bottom: 3%;
+    font-size: 40px;
+    margin-top: -100px;
+}
+
+.opcoes .textoBotao .texto .textinho {
+    font-size: 30px;
+    margin-bottom: 8%;
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.opcoes .textoBotao .texto .textinho .botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.opcoes .textoBotao .texto .textinho b {
+    color: lightgreen;
+}
+
+.opcoes .textoBotao .texto .textinho e {
+    color: rgb(115, 202, 231);
+}
+
+.opcoes .textoBotao .botao {
+    height: 100%;
+    width: 100%;
+}
+
+.opcoes .textoBotao .botao .botaoF {
+    height: 50px;
+    width: 190px;
+    background-color: #5F9EA0;
+    color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 3%;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgb(40, 110, 133);
+}
+
+.opcoes .textoBotao .botao .botaoE {
+    height: 50px;
+    width: 190px;
+    background-color: #5F9EA0;
+    color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 3%;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgb(40, 110, 133);
+}
+
+.opcoes .textoBotao .botao .botaoE:hover {
+    background-color: rgb(40, 110, 133)
+}
+
+.opcoes .textoBotao .botao .botaoF:hover {
+    background-color: rgb(40, 110, 133)
+}
+
+.opcoes .imagemPergunta {
+    height: 600px;
+    width: auto;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.tudoF {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* padding-left: 10rem; */
+}
+
+.tudoF .cardF {
+    width: auto;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    /* border: #5F9EA0 2px solid; */
+    color: white;
+    margin-left: 8%;
+}
+
+.teste {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.tudoF .cardF input {
+    background-color: transparent;
+    border: none;
+    width: 300px;
+    height: min-content;
+    border-bottom: #5F9EA0 2px solid;
+    color: rgb(149, 217, 219);
+    padding-left: 50px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.tudoF .cardF .tituloFunc {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 20%;
+    margin-bottom: 15%;
+}
+
+.tudoF .cardF .perguntas {
+    font-size: 25px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.tudoF .cardF .botaoFF {
+    height: 50px;
+    width: 260px;
+    background-color: #5F9EA0;
+    color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    box-shadow: 4px 4px 8px rgb(40, 110, 133);
+}
+
+.tudoF .cardF .botaoFF:hover {
+    background-color: rgb(40, 110, 133);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.cliqueAqui {
+    color: #5F9EA0;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tudoF .imagemPergunta {
+    margin-top: -2%;
+    margin-left: 6%;
+    height: 600px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tudoE .imagemPergunta {
+    margin-top: -2%;
+    margin-left: 10%;
+    height: 600px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tudoE .imagemPerguntaR {
+    margin-top: -2%;
+    /* margin-left: 10%; */
+    height: 550px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tudoE {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.tudoE .cardE {
+    width: auto;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    /* border: #5F9EA0 2px solid; */
+    color: white;
+}
+
+.tudoE .cardE .card2 {
+    margin-left: 160%;
+    margin-top: -59%;
+}
+
+.tudoE .cardE input {
+    background-color: transparent;
+    border: none;
+    width: 300px;
+    height: min-content;
+    border-bottom: #5F9EA0 2px solid;
+    color: rgb(149, 217, 219);
+    padding-left: 50px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.tudoE .cardE .tituloEsta {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 13%;
+    margin-bottom: 15%;
+    margin-left: 60%;
+}
+
+.tudoE .cardE .tituloR {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+
+.cardE .cliqueAquiDiv {
+    margin-left: 120%;
+    display: flex;
+    width: 100%;
+}
+
+.tudoE .cardE .perguntas {
+    font-size: 25px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.tudoE .cardE .botaoEE {
+    height: 50px;
+    width: 260px;
+    background-color: #5F9EA0;
+    color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 9%;
+    margin-bottom: 10%;
+    margin-left: 90%;
+    box-shadow: 4px 4px 8px rgb(40, 110, 133);
+}
+
+.botaoNovo {
+    height: 50px;
+    width: 260px;
+    background-color: #5F9EA0;
+    color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    box-shadow: 4px 4px 8px rgb(40, 110, 133);
+}
+
+.tudoE .cardE .botaoR {
+    height: 50px;
+    width: 260px;
+    background-color: #5F9EA0;
+    color: white;
+    border: white 2px solid;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 9%;
+    margin-bottom: 10%;
+    box-shadow: 4px 4px 8px rgb(40, 110, 133);
+}
+
+.botaoNovo:hover {
+    background-color: rgb(40, 110, 133);
+}
+
+.tudoE .cardE .botaoEE:hover {
+    background-color: rgb(40, 110, 133);
+}
+
+.tudoE .cardE .botaoR:hover {
+    background-color: rgb(40, 110, 133);
+}
+
+
+.invisivel {
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.painel_sucesso {
+    margin-top: 100px;
+    margin-left: 37%;
+    font-size: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    min-height: 250px;
+    height: auto;
+    background-color: #364DAA;
+    border: 3px #040189 solid;
+    opacity: 0;
+    color: white;
+}
+
+.painel_sucesso h1 {
+    color: greenyellow;
+}
+
+.visivel {
+    transition: all 0.3s;
+    opacity: 1;
+
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid grey;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-bottom: 4px solid #040189;
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

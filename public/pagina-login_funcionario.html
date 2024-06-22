@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Login de Funcionario</title>
+    <link rel="stylesheet" href="css/pagina-login.css" />
+    <link rel="stylesheet" href="css/pagina-login2.css" />
+    <link REL="SHORTCUT ICON" HREF="../assets/imagens/Logo_Quadrada-removebg.png">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container_header">
+            <div class="imagem1">
+                <img src="../assets/imagens/logo.svg" alt="" class="imagemfixa">
+            </div>
+            <div class="opcPrincipais">
+                <a href="Solicite-Orçamento.html">Orçamentos</a>
+                <a href="calculadora.html">Calculadora</a>
+            </div>
+            <a href="decisaoLogin.html">Voltar</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="container_login2">
+            <div class="painel_login">
+                <h1>LOGIN DE FUNCIONÁRIO</h1>
+            </div>
+            <div class="div_login_inputs">
+
+                <div class="div_loginsenha">
+                    Email: <input type="text" id="login_input" autocomplete="off" class="input_login"
+                        onkeyup="valida_email()" />
+                </div>
+                <div class="informacao" id="alerta_email"></div>
+
+                <div class="div_loginsenha">
+                    Senha: <input type="password" id="senha_input" class="input_senha" />
+                </div>
+            </div>
+            <div class="div_botao_login">
+                <button onclick="entrar_funcionario()" class="botao_login">Login</button>
+            </div>
+            <div id="div_msg" class="msg"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/login-func.js">
+   
+
+
+
+
+</script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="css/pagina-cadastro.css" />
+    <link REL="SHORTCUT ICON" HREF="../assets/imagens/Logo_Quadrada-removebg.png">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container_header">
+            <div class="imagem1">
+                <img src="../assets/imagens/logo.svg" alt="" class="imagemfixa">
+            </div>
+            <div class="opcPrincipais">
+                <a href="Solicite-Orçamento.html">Orçamentos</a>
+                <a href="calculadora.html">Calculadora</a>
+            </div>
+            <a href="./index.html">Voltar</a>
+        </div>
+    </div>
+
+
+    <!-- <div class="container_total"> -->
+
+    <div class="container" id="container">
+        <div class="painel1" id="painel1">
+            <div class="textoCadastro">
+                <p>Cadastre-se</p>
+            </div>
+            <p class="paragrafos">Nome do Responsável:</p>
+            <input type="text" id="nome_input" autocomplete="off">
+
+            <p class="paragrafos">Email:</p>
+            <input type="email" id="email_input" onkeyup="valida_email()" autocomplete="off">
+            <div class="informacao" id="alerta_email"></div>
+
+            <p class="paragrafos">Senha:</p>
+            <input type="password" id="senha_input" onkeyup="valida_senha(), valida_senha2()">
+            <div class="informacao" id="alerta_senha"></div>
+
+            <p class="paragrafos">Confirme a Senha:</p>
+            <input type="password" id="senha2_input" onkeyup="valida_senha2()">
+            <div class="informacao" id="alerta_confirme_senha"></div>
+
+            <p class="paragrafos">CNPJ:</p>
+            <input type="text" id="cnpj_input" onkeyup="valida_cnpj()" maxlength="18" autocomplete="off">
+            <div class="informacao" id="alerta_cnpj"></div>
+
+            <div class="botao_cadastro">
+                <button onclick="cadastrar()">Cadastre - se</button>
+            </div>
+            <div class="ultimaMsg">
+                <p>Já tem um login? <a href="decisaoLogin.html"> Clique aqui</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+</body>
+
+</html>
+<script src="./js/cadastro.js"></script>

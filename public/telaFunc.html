@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionário</title>
+    <link REL="SHORTCUT ICON" HREF="../assets/imagens/Logo_Quadrada-removebg.png">
+    <link rel="stylesheet" href="css/decisao.css">
+</head>
+
+<body onload="buscar_estabelecimentos(1)">
+    <div class="header">
+        <div class="imagem1">
+            <img src="../assets/imagens/logo.svg" class="imagemfixa">
+        </div>
+        <div class="opcPrincipais">
+            <a href="principal-cadastrado.html">Home</a>
+            <a href="orcamento-cadastrado.html">Orçamentos</a>
+            <a href="decisao-dashbord.html">Painel</a>
+        </div>
+        <div class="cadastro2">
+            <a href="decisao.html"> Voltar</a>
+        </div>
+    </div>
+    <div class="tudoF" id="tudoE">
+        <div class="cardF">
+            <div>
+                <p class="tituloFunc">Funcionário</p>
+            </div>
+
+            <div id="estabelecimento_escolha"></div>
+            
+            <div class="teste" style=" display: flex;align-items: center;">
+                <div class="preguntasFunc">
+                    <div>
+                        <p class="perguntas">Nome do funcionário</p>
+                        <input type="text" id="input_nomeFunc" autocomplete="off">
+                    </div>
+
+                    <div>
+                        <p class="perguntas">E-mail</p>
+                        <input type="text" id="input_emailFunc" autocomplete="off">
+
+                    </div>
+
+
+
+                    <div>
+                        <p class="perguntas">Cargo do funcionário</p>
+                        <input type="text" id="input_cargo" autocomplete="off">
+                    </div>
+
+
+                </div>
+
+                <div class="preguntasFunc2">
+                    <div>
+                        <p class="perguntas">Senha</p>
+                        <input type="text" id="input_senhaFunc" autocomplete="off">
+                    </div>
+
+                    <div>
+                        <p class="perguntas">Telefone do funcionário</p>
+                        <input type="number" id="input_telefone" autocomplete="off">
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <button class="botaoFF" onclick="cadastrarFuncionario()">Cadastrar Funcionário</button>
+            </div>
+            <div>
+                <p>Deseja cadastrar um Estabelecimento? <span class="cliqueAqui" onclick="estabelecimento()">Clique
+                        aqui</span></p>
+            </div>
+        </div>
+        <div class="imagemPergunta">
+            <img src="../assets/imagens/30576701_7718877-ai-brush-removebg-7g7bvysh.png" alt="" class="imagemPergunta">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/sessao.js"></script>
+<script src="./js/funcionario.js">
+    
+
+</script>

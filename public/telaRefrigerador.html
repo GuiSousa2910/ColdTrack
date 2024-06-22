@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refrigerador</title>
+    <link REL="SHORTCUT ICON" HREF="../assets/imagens/Logo_Quadrada-removebg.png">
+    <link rel="stylesheet" href="css/decisao.css">
+</head>
+
+<body onload="buscar_estabelecimentos(1)">
+    <div class="header">
+        <div class="imagem1">
+            <img src="../assets/imagens/logo.svg" class="imagemfixa">
+        </div>
+        <div class="cadastro2">
+            <a href="telaEst.html"> Voltar</a>
+        </div>
+    </div>
+    <div class="tudoE" id="tudoE">
+        <div class="cardE" style="display: flex; flex-direction: column; align-items: center;">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <p class="tituloR">Refrigerador</p>
+            </div>
+            <div id="estabelecimento_escolha"></div>
+            <div class="preguntasEsta" style="display: flex; justify-content: center; align-items: center; gap: 50px;">
+                <!-- <div class='card1'> -->
+                <div>
+                    <div>
+                        <p class="perguntas">Local Fisico</p>
+                        <input type="text" id="input_local_fisico" autocomplete="off">
+                    </div>
+                    <div>
+                        <p class="perguntas">Marca</p>
+                        <input type="marca" id="input_marca" autocomplete="off">
+                    </div>
+                    <div>
+                        <p class="perguntas">Modelo</p>
+                        <input type="marca" id="input_modelo" autocomplete="off">
+                    </div>
+                    <div>
+                        <p class="perguntas">Quantidade de portas</p>
+                        <input type="number" id="input_qntportas" autocomplete="off">
+                    </div>
+                </div>
+                <div style="margin-top: -48px;">
+
+                    <div>
+                        <p class="perguntas">Tipo da Porta</p>
+                        <select type="marca" id="select_tipo" autocomplete="off">
+                            <option>Arrastar</option>
+                            <option>Puxar</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p class="perguntas">Produto Armazenado</p>
+                        <input type="text" id="input_produto" autocomplete="off">
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <button class="botaoNovo" onclick="cadastrarRefrigerador()">Cadastrar Refrigerador</button>
+        </div>
+        <div class="imagemPerguntaR">
+            <img src="../assets/imagens/30576701_7718877-ai-brush-removebg-7g7bvysh.png" alt="" class="imagemPerguntaR">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/sessao.js"></script>
+<script src="./js/refrigerador.js">
+
+</script>
